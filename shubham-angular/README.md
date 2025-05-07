@@ -57,3 +57,69 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+========================================================================================================================================================================================
+
+### ✅ Step-by-Step Solution:
+
+1. **Ensure You're in the Correct Directory:**
+
+   ```bash
+   cd C:\Users\amans\Downloads\angular-main\angular-main
+   ```
+
+2. **Install Node Modules:**
+   Run the following to install all dependencies listed in `package.json`:
+
+   ```bash
+   npm install
+   ```
+
+   * If you get errors here, share them with me.
+
+3. **Run the Angular App Again:**
+   After `npm install` completes:
+
+   ```bash
+   ng serve
+   ```
+
+---
+
+### 🧪 Still Not Working?
+
+If `npm install` runs but you still get the same error:
+
+4. **Install the Missing Builder Manually:**
+
+   ```bash
+   npm install --save-dev @angular-devkit/build-angular
+   ```
+
+---
+
+### 💡 Optional Checks:
+
+* **Check Angular CLI Installation:**
+
+  ```bash
+  ng version
+  ```
+
+  If this command fails, install the Angular CLI globally:
+
+  ```bash
+  npm install -g @angular/cli
+  ```
+
+* **Delete and Reinstall `node_modules`:**
+  If issues persist:
+
+  ```bash
+  rm -rf node_modules package-lock.json
+  npm install
+  ```
+
+Would you like me to check your `package.json` content for any missing entries?
+
